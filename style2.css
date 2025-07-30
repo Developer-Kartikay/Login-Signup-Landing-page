@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1a1a40, #2c2c54, #3a0ca3, #5f0f40); /* Dark tones */
+  background-size: 400% 400%;
+  animation: gradientShift 18s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  text-align: center;
+}
+
+.card {
+  background: #1e1e2f; /* Darker card */
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+  max-width: 400px;
+  width: 100%;
+}
+
+.card h1 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.card p {
+  margin-bottom: 30px;
+  color: #cccccc;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  flex: 1;
+  text-decoration: none;
+  padding: 12px 0;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #6c5ce7;
+  transition: backgrond 0.3s ease;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #5a4db8;
+}
+
+.btn.outline {
+  background-color: transparent;
+  border: 2px solid #6c5ce7;
+  color: #6c5ce7;
+}
+
+.btn.outline:hover {
+  background-color: #2f2f4f;
+}
+
+.divider {
+  margin: 20px 0;
+  color: #888;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 17px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: backgrond 0.3s ease;
+}
+
+.google-btn img {
+  width: 22px;
+  height: 22px;
+}
+
+.google-btn:hover {
+  background-color: #f2f2f2;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Input Fields (Email / Password) */
+input[type="email"],
+input[type="password"] {
+  width: 90%;
+  padding: 12px 15px;
+  margin: 10px 0px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2e2e40;
+  color: #fff;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  background-color: #3a3a55;
+  box-shadow: 0 0 5px #6200ea;
+}
+
+/* Login / Signup Buttons */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #6200ea, #9c27b0);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #5b00d0, #7a1ba1);
+  transform: scale(1.02);
+}
+
+/* Link styles for "Sign Up" or "Login" text */
+a {
+  color: #bb86fc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
